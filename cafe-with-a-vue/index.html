@@ -9,6 +9,7 @@
 	</head>
 	<body>
 		<div class="app">
+			
 			<h1>La belle vue</h1>
 			<p class="description">
 				Bienvenue dans notre café la belle vue ! Nous sommes réputés pour notre
@@ -16,9 +17,19 @@
 				ou avec un goûter réconfortant. Mais attention, vous verrez qu'il est
 				difficile de s'arrêter.
 			</p>
+			{{message}},
 			<footer class="footer">
 				<p>Copyright La belle vue 2020</p>
 			</footer>
 		</div>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script> 
+			const app = new Vue({
+			el: '#app',
+				data:{ 
+				message: "restaurantName",
+					}
+			})
+		</script>
 	</body>
 </html>
